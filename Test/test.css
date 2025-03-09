@@ -2,7 +2,7 @@
 body {
     /*background-color:#f7f1e3;*/
     background: linear-gradient(135deg, #f5f7fa 0%, #fff8e1 100%);
-    background: url('img/studybc.png') center/cover fixed;
+    background: url('Test/img/studybc.png') center/cover fixed;
     font-family: 'Comic Sans MS', 'Microsoft YaHei', 'PingFang SC', cursive, sans-serif;
     margin: 0;
     padding: 0; 

@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('goto-homework').addEventListener('click', () => {
         const progress = JSON.parse(localStorage.getItem('classProgress'));
         if(Object.keys(progress).length === 4) {
-            window.location.href = 'test.html';
+            window.location.href = 'Test/test.html';
         } else {
             alert('请先完成所有课堂练习题！');
         }

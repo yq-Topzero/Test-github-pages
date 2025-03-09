@@ -1,0 +1,139 @@
+<!-- classroom.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课堂练习-烙饼问题</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="classroom.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>课堂练习</h2>
+        <div class="progress-info">
+            已完成 <span id="progress-count">0</span>/4 题
+        </div>
+        
+        <div class="question-container" id="classroom-questions">
+            <!-- 题目1 -->
+            <div class="question-page active">
+                <div class="question-content">
+                    <p class="question-text">
+                        <span class="question-number">Q1</span>
+                        烙1张饼需要几分钟？（每面3分钟）
+                    </p>
+                    <div class="options-container">
+                        <ul class="options">
+                            <li class="option option-a">
+                                <input type="radio" name="q1" value="A" id="q1a">
+                                <label for="q1a">A. 3分钟</label>
+                            </li>
+                            <li class="option option-b">
+                                <input type="radio" name="q1" value="B" id="q1b">
+                                <label for="q1b">B. 6分钟</label>
+                            </li>
+                            <li class="option option-c">
+                                <input type="radio" name="q1" value="C" id="q1c">
+                                <label for="q1c">C. 9分钟</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目2 -->
+            <div class="question-page">
+                <div class="question-content">
+                    <p class="question-text">
+                        <span class="question-number">Q2</span>
+                        锅1次最多烙2张饼，每面3分钟，问烙3张饼最少需要多久？
+                    </p>
+                    <div class="options-container">
+                        <ul class="options">
+                            <li class="option option-a">
+                                <input type="radio" name="q2" value="A" id="q2a">
+                                <label for="q2a">A. 6分钟</label>
+                            </li>
+                            <li class="option option-b">
+                                <input type="radio" name="q2" value="B" id="q2b">
+                                <label for="q2b">B. 9分钟</label>
+                            </li>
+                            <li class="option option-c">
+                                <input type="radio" name="q2" value="C" id="q2c">
+                                <label for="q2c">C. 12分钟</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目3 -->
+            <div class="question-page">
+                <div class="question-content">
+                    <p class="question-text">
+                        <span class="question-number">Q3</span>
+                        锅1次最多烙2张饼，每面3分钟，问烙5张饼最少需要多久？
+                    </p>
+                    <div class="options-container">
+                        <ul class="options">
+                            <li class="option option-a">
+                                <input type="radio" name="q3" value="A" id="q3a">
+                                <label for="q3a">A. 15分钟</label>
+                            </li>
+                            <li class="option option-b">
+                                <input type="radio" name="q3" value="B" id="q3b">
+                                <label for="q3b">B. 18分钟</label>
+                            </li>
+                            <li class="option option-c">
+                                <input type="radio" name="q3" value="C" id="q3c">
+                                <label for="q3c">C. 30分钟</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目4 -->
+            <div class="question-page">
+                <div class="question-content">
+                    <p class="question-text">
+                        <span class="question-number">Q4</span>
+                        锅1次最多烙2张饼，每面3分钟，问烙6张饼最少需要多久？
+                    </p>
+                    <div class="options-container">
+                        <ul class="options">
+                            <li class="option option-a">
+                                <input type="radio" name="q4" value="A" id="q4a">
+                                <label for="q4a">A. 15分钟</label>
+                            </li>
+                            <li class="option option-b">
+                                <input type="radio" name="q4" value="B" id="q4b">
+                                <label for="q4b">B. 18分钟</label>
+                            </li>
+                            <li class="option option-c">
+                                <input type="radio" name="q4" value="C" id="q4c">
+                                <label for="q4c">C. 36分钟</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="prev-btn">上一题</button>
+            <button class="next-btn">下一题</button>
+        </div>
+
+        <!-- 完成提示层 -->
+        <div class="complete-layer">
+            <h2>🎉 课堂练习完成！</h2>
+            <button id="goto-homework">继续课后练习</button>
+        </div>
+    </div>
+
+
+    <script src="classroom.js"></script>
+</body>
+</html>
